@@ -3,54 +3,131 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tether – Privacy and Support</title>
-<meta name="description" content="Tether privacy policy and support. Tether collects no data and makes no network requests.">
+<title>Tether – Privacy, Terms and Support</title>
 <style>
-  :root { --ink: hsl(240, 10%, 6%); --slate: hsl(232, 7%, 38%); --ground: hsl(240, 5%, 97%); --card: #fff; --line: hsl(240, 6%, 90%); }
-  @media (prefers-color-scheme: dark) { :root { --ink: hsl(240, 5%, 97%); --slate: hsl(232, 7%, 68%); --ground: hsl(240, 10%, 6%); --card: hsl(240, 8%, 10%); --line: hsl(240, 6%, 18%); } }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.55 -apple-system, "Instrument Sans", system-ui, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
-  h1 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 4px; font-weight: 600; }
-  .tag { color: var(--slate); margin: 0 0 32px; }
-  h2 { font-size: 20px; margin: 32px 0 8px; font-weight: 600; }
-  p, li { color: var(--ink); }
-  .muted { color: var(--slate); }
-  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 4px; margin: 16px 0; }
-  a { color: inherit; }
-  ul { padding-left: 20px; }
-  footer { color: var(--slate); font-size: 14px; margin-top: 40px; }
+:root{--ink:hsl(240,10%,6%);--slate:hsl(232,7%,38%);--ground:hsl(240,5%,97%);--card:#fff;--line:hsl(240,6%,90%);--dot:hsl(216,80%,52%)}
+@media (prefers-color-scheme:dark){:root{--ink:hsl(240,5%,97%);--slate:hsl(232,7%,68%);--ground:hsl(240,10%,6%);--card:hsl(240,8%,10%);--line:hsl(240,6%,18%)}}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:17px/1.55 -apple-system,"Instrument Sans",system-ui,sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 16px 64px}h1{font-size:34px;letter-spacing:-.02em;margin:0 0 4px;font-weight:600}h1 span{color:var(--dot)}
+.tag{color:var(--slate);margin:0 0 16px}nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 24px}nav a{color:var(--slate)}
+h2{font-size:22px;margin:8px 0 4px;font-weight:600}h3{font-size:17px;margin:20px 0 4px;font-weight:600}.muted{color:var(--slate);margin-top:0}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0}a{color:inherit}ul{padding-left:20px}footer{color:var(--slate);font-size:14px;margin-top:40px}
 </style>
 </head>
 <body>
 <main>
-  <h1>tether</h1>
+  <h1>tether<span>.</span></h1>
   <p class="tag">Break big assignments into small steps. Everything stays on your device.</p>
-
-  <section id="privacy">
-    <h2>Privacy policy</h2>
-    <p><strong>Tether collects no data.</strong> None. Not your name, your tasks, your schedule, your device identifiers, or how you use the app.</p>
-    <ul>
-      <li>Tether makes no network requests. It has no server, no account system, no analytics, no crash reporting, and no advertising.</li>
-      <li>Everything you type is stored only on your device, in the app's own storage.</li>
-      <li>Task breakdowns and extraction are produced by a language model that ships inside the app and runs entirely on your device. Your text never leaves the phone.</li>
-      <li>Notifications are scheduled locally by the app. No push notification service is used.</li>
-      <li>"Export my data" creates a file on your device and hands it to the system share sheet. Where you send it is your choice; Tether never uploads it.</li>
-      <li>Deleting the app, or tapping "Delete all data" in Profile, removes everything. There is nothing anywhere else to delete.</li>
-    </ul>
-    <p class="muted">Tether is a productivity tool. It does not diagnose, treat, or manage any condition.</p>
-    <p class="muted">Last updated September 19, 2026. If this policy ever changes, the new version will be posted here with a new date.</p>
-  </section>
+  <nav><a href="#support">Support</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Use</a><a href="#ai">About the AI</a><a href="#licenses">Open source</a></nav>
 
   <section id="support">
     <h2>Support</h2>
-    <p>Questions or problems? Email <a href="mailto:tether.team.support@gmail.com">tether.team.support@gmail.com</a>.</p>
-    <p class="muted">Tether is built by a high school student. Replies may take a few days.</p>
+    <p>Questions, problems, or a report about an inappropriate AI suggestion? Email <a href="mailto:tether.team.support@gmail.com">tether.team.support@gmail.com</a>.</p>
+    <p class="muted">Replies may take a few days.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Last updated October 9, 2026</p>
+    <p>Tether collects no data. We never receive your name, tasks, schedule, device identifiers, location, or how you use the app. Tether makes no internet connections at all.</p>
+    <h3>What stays on your device</h3>
+    <p>Everything you enter: your first name if you give one, tasks and their steps, due dates, busy times, focus sessions, and settings. It is stored in Tether's private storage on your device and protected by your device's own security, such as your passcode. We have no copy and no way to see it.</p>
+    <h3>The AI model</h3>
+    <p>Step suggestions, easier rewrites of a step, and reading due dates from pasted text come from a small language model that is built into the app and runs on your device. Your text is processed on the device and never sent anywhere. The model does not learn from what you type. You can turn it off in Profile, Model, Tailored steps.</p>
+    <h3>What Tether does not have</h3>
+    <p>No accounts or sign-in. No server. No analytics, no ads, and no tracking. No third-party code that collects data. No crash reporter. No access to your location, contacts, photos, camera, or microphone.</p>
+    <h3>Notifications</h3>
+    <p>Reminders are scheduled on the device by Tether itself. No push service is involved. A reminder may show a task's title, including on the lock screen. You can change how notifications appear in the iOS Settings app.</p>
+    <h3>Export and import</h3>
+    <p>Export my data writes a backup file on your device and opens the iOS share sheet. Where you send it is your choice; Tether never uploads it. Import data reads only the file you pick.</p>
+    <h3>Apple</h3>
+    <p>Apple runs the App Store and handles your download under its own privacy policy. If you have chosen in iOS settings to share analytics with app developers, Apple may give us anonymous crash reports and usage statistics. These do not identify you and contain none of your tasks.</p>
+    <h3>Children</h3>
+    <p>Tether is meant for high school students. Because it collects no personal information from anyone, it collects none from children under 13. Parents can see everything Tether stores by opening the app, and can delete all of it.</p>
+    <h3>Deleting your data</h3>
+    <p>Profile, Delete all data removes everything Tether has stored. Deleting the app does the same. There is nothing anywhere else to delete.</p>
+    <h3>Your rights</h3>
+    <p>Privacy laws such as the GDPR and the California Consumer Privacy Act give you rights over personal information a company holds about you. We hold none, so there is nothing for us to access, correct, sell, share, or delete. We do not sell or share personal information.</p>
+    <h3>Changes</h3>
+    <p>If this policy changes, the new version will appear on the support page and in the app with a new date. If Tether ever starts collecting any data, this policy and the App Store privacy label will change first.</p>
+    <h3>Contact</h3>
+    <p>Email <a href="mailto:tether.team.support@gmail.com">tether.team.support@gmail.com</a>.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms of Use</h2>
+    <p class="muted">Last updated October 9, 2026</p>
+    <p>These terms cover your use of Tether, an iPhone app published on the App Store by the developer named on its App Store page ("we", "us"). By using Tether you agree to them. If you do not agree, do not use the app.</p>
+    <h3>Age</h3>
+    <p>Tether is for people 13 and older. If you are under 18, read these terms with a parent or guardian. By using Tether you confirm that a parent or guardian agrees to them for you.</p>
+    <h3>What Tether is</h3>
+    <p>Tether is a planner for schoolwork. You add tasks, and Tether can suggest small steps for them, place them on a calendar, run a focus timer, and send reminders. Tether has no accounts and makes no internet connections. Everything you enter stays on your device.</p>
+    <h3>AI suggestions</h3>
+    <p>Some features use a small AI language model that runs on your device. It suggests steps for a task, rewrites a step to be easier, and reads due dates out of text you paste.</p>
+    <ul>
+      <li>The suggestions are produced automatically. Nobody reviews them before you see them.</li>
+      <li>They can be wrong, incomplete, generic, or not relevant to your assignment. Dates read from pasted text can be wrong.</li>
+      <li>Tether checks suggestions for offensive language, but no check is perfect. If you see something inappropriate, report it (see Contact) and turn the feature off in Profile, Model, Tailored steps.</li>
+      <li>Treat every suggestion as a starting point, not an instruction. Your teacher's instructions and your assignment's requirements always come first. Check every due date yourself.</li>
+      <li>You are responsible for judging every suggested step yourself, including whether it is safe. Use your own best judgment, and do not follow a step just because Tether suggested it.</li>
+    </ul>
+    <h3>Schoolwork</h3>
+    <p>Tether helps you plan and start work. It breaks an assignment into small first steps; it does not write or answer your assignment and is not a tutor. You are responsible for your own schoolwork and for following your school's and teacher's rules, including any rules about AI tools.</p>
+    <h3>Not advice</h3>
+    <p>Tether is a productivity tool. It does not give medical, psychological, legal, or educational advice, it is not a health product, and it is not for emergencies.</p>
+    <h3>Reminders and calendar</h3>
+    <p>Reminders and calendar placement are conveniences. A reminder can fail to appear, for example if notifications are off or the device is off. Do not rely on Tether as your only record of a deadline.</p>
+    <h3>Your content</h3>
+    <p>What you enter in Tether is yours. It is stored only on your device. We cannot see it, back it up, or recover it. If you delete the app or use Delete all data, it is gone. Use Export my data if you want a copy. Where you send an exported file is your choice and your responsibility.</p>
+    <h3>Acceptable use</h3>
+    <p>Use Tether only for lawful purposes and in line with Apple's terms. Do not try to make the app produce harmful or offensive content, and do not redistribute the app or its model except as their licenses allow.</p>
+    <h3>Licenses</h3>
+    <p>Your right to use Tether comes from Apple's Licensed Application End User License Agreement (the Standard EULA). These terms add to it. If the two conflict, the Standard EULA controls. Tether includes open-source components under their own licenses, listed in Profile, Licenses. The AI model is a fine-tuned version of SmolLM2-360M-Instruct, used under the Apache License 2.0.</p>
+    <h3>No warranty</h3>
+    <p>TO THE FULLEST EXTENT THE LAW ALLOWS, TETHER IS PROVIDED FREE, "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. WE DO NOT PROMISE THAT THE APP OR ITS SUGGESTIONS WILL BE ACCURATE, COMPLETE, UNINTERRUPTED, OR FREE OF ERRORS.</p>
+    <h3>Limit of liability</h3>
+    <p>TO THE FULLEST EXTENT THE LAW ALLOWS, AND EXCEPT FOR PERSONAL INJURY WHERE THE LAW DOES NOT ALLOW A LIMIT, WE ARE NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR LOST DATA, MISSED DEADLINES, OR GRADES, ARISING FROM YOUR USE OF TETHER OR ITS SUGGESTIONS. OUR TOTAL LIABILITY FOR ANY CLAIM IS LIMITED TO FIFTY U.S. DOLLARS (US$50).</p>
+    <p>Some places do not allow these limits, so they may not all apply to you. Nothing in these terms limits rights you have by law that cannot be waived.</p>
+    <h3>Changes</h3>
+    <p>If these terms change, the new version will appear in the app and on the support page with a new date. Using Tether after a change means you accept the new terms.</p>
+    <h3>Governing law</h3>
+    <p>These terms are governed by the laws of the United States and of the state where the developer lives, without regard to conflict-of-law rules. If you are a consumer in another country, you keep any protections the law of your country gives you.</p>
+    <h3>Apple</h3>
+    <p>Apple is not a party to these terms and is not responsible for Tether or its content. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them.</p>
+    <h3>Contact</h3>
+    <p>Email <a href="mailto:tether.team.support@gmail.com">tether.team.support@gmail.com</a>.</p>
+  </section>
+
+  <section id="ai">
+    <h2>About the AI</h2>
+    <p class="muted">Last updated October 9, 2026</p>
+    <p>Tether includes a small AI language model, a fine-tuned version of the open SmolLM2-360M-Instruct model (Apache License 2.0). It is built into the app, runs only on your iPhone, and never connects to the internet.</p>
+    <h3>What it does</h3>
+    <ul>
+      <li>Suggests three to seven small steps for a task.</li>
+      <li>Rewrites one step to be easier.</li>
+      <li>Reads assignments and due dates out of text you paste.</li>
+    </ul>
+    <h3>What to know</h3>
+    <ul>
+      <li>It can be wrong. Steps can be generic, miss part of the assignment, or not fit what your teacher asked for. Dates read from pasted text can be off.</li>
+      <li>Nobody reviews its suggestions before you see them.</li>
+      <li>Tether checks every suggestion for offensive language and replaces anything that fails with general steps. No check catches everything.</li>
+      <li>Your teacher's instructions always come first. Check every due date yourself.</li>
+      <li>Judge every step yourself, including whether it is safe. Use your own best judgment and do not just follow the steps.</li>
+      <li>It breaks work into first steps. It does not write or answer your assignment. Follow your school's rules about AI tools.</li>
+    </ul>
+    <h3>Your data</h3>
+    <p>What you type is processed on your device and never sent anywhere. The model does not learn from you.</p>
+    <h3>Turning it off</h3>
+    <p>Profile, Model, Tailored steps. With it off, Tether uses general steps written in advance instead.</p>
+    <h3>Report a problem</h3>
+    <p>If a suggestion is inappropriate or harmful, tell us what you typed and what it showed. Email <a href="mailto:tether.team.support@gmail.com">tether.team.support@gmail.com</a>.</p>
   </section>
 
   <section id="licenses">
     <h2>Open source</h2>
-    <p>Tether's on-device model is a fine-tuned derivative of SmolLM2 (Apache 2.0). The Instrument Sans typeface is used under the SIL Open Font License 1.1. Full license texts are in the app under Profile → Licenses.</p>
+    <p>Tether's on-device model is a fine-tuned version of SmolLM2-360M-Instruct (Apache License 2.0). The Instrument Sans typeface is used under the SIL Open Font License 1.1. Full license texts are in the app under Profile, Licenses.</p>
   </section>
 
   <footer>© 2026 Tether</footer>
